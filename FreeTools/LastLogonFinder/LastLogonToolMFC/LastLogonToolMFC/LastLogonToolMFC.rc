@@ -1,0 +1,307 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LastLogonToolMFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LastLogonToolMFC.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LastLogonToolMFC"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "LastLogonToolMFC Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_LASTLOGONTOOLMFC_DIALOG DIALOGEX 0, 0, 463, 333
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ADManagerPlus-LastLogonFinder"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         """GETLASTLOGONDETAILS""",IDC_GETLASTLOGONDETAILS,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,341,178,102,16
+    GROUPBOX        "",IDC_STATIC,6,101,450,48
+    EDITTEXT        IDC_EDIT1,118,125,79,12,ES_AUTOHSCROLL
+    LTEXT           "Domain Name",IDC_P1DomainName,23,113,76,12
+    LTEXT           "User Name",IDC_P1UserName,119,113,55,8
+    COMBOBOX        IDC_COMBO1,23,125,80,15,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "SEARCH",IDC_SEARCH,204,124,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,196,431,100
+    LTEXT           "NOTE:  Provide this tool a user’s domain name and username, it will give his/her last logon details.",IDC_P1Label1,24,47,412,9
+    LTEXT           "If the desired domain name is not available in the text box given below, you can even type it in.",IDC_P1Label2,37,65,383,12
+    LTEXT           "User name can be any of these: a user’s First Name, Last Name,Display Name, sAMAccount Name, User Principle Name    ",IDC_P1Label3,36,83,404,18
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,25,66,8,7
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,25,84,8,7
+    CONTROL         """SELECTALL""",IDC_SELECTALL,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,15,183,50,11
+    CONTROL         """DESELECTALL""",IDC_DESELECTALL,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,66,183,46,11
+    CONTROL         150,IDC_STATIC,"Static",SS_BITMAP,0,1,467,31
+    LTEXT           "www.admanagerplus.com",IDC_P1Link1,327,311,88,8
+    LTEXT           "Looking for more Attribute? Visit:",IDC_P1LabelLink,218,311,105,8
+    CONTROL         """HOME""",IDC_HOME,"Button",BS_OWNERDRAW | WS_TABSTOP,402,39,50,14
+    GROUPBOX        "",IDC_STATIC,6,158,451,146
+    LTEXT           "",IDC_Result,23,169,191,8
+    LTEXT           "Copyright © 2010 ZOHO Corp. All rights reserved |",IDC_STATIC,45,311,167,8
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 315, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ADManagerPlus-LastLogonFinder"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         """GENERATEREPORT""",IDC_GENERATEREPORT,"Button",BS_OWNERDRAW | WS_TABSTOP,116,119,75,16
+    GROUPBOX        "",IDC_STATIC,12,5,291,138
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,23,39,267,74
+    CONTROL         "lastLogon",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | WS_GROUP,147,19,47,10
+    CONTROL         "lastLogonTimestamp",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,204,20,81,10
+    LTEXT           "Select your preferred attribute:",IDC_P2Label1,24,19,110,9
+    LTEXT           "Looking for more? Visit:",IDC_STATIC,148,150,74,8
+    LTEXT           "www.admanagerplus.com",IDC_Link2,225,150,80,8
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 322, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ADManagerPlus-LastLogonFinder"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_GroupBox,11,63,290,163,BS_CENTER
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_AUTOARRANGE | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,76,267,141
+    CONTROL         "The list given below shows the last logon time of users of the DC(s) specified.",IDC_P3Label1,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,21,9,338,17
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP,8,11,8,7
+    CONTROL         """CLOSE""",IDC_CLOSE,"Button",BS_OWNERDRAW | WS_TABSTOP,143,245,50,14
+    LTEXT           "Looking for more? Visit:",IDC_LookForMore,147,231,74,8
+    LTEXT           "",IDC_TimezoneResult,13,53,288,8
+    LTEXT           "www.admanagerplus.com",IDC_P3Link3,226,231,82,8,0,WS_EX_RTLREADING
+    DEFPUSHBUTTON   "TimeZone",IDC_BUTTON1,251,28,50,14,0,WS_EX_RTLREADING
+    COMBOBOX        IDC_LISTOF_TIMEZONESNEW2,86,30,164,30,CBS_DROPDOWN | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_LabelTimezone,14,33,66,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "LastLogonToolMFC.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "LastLogonToolMFC.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LASTLOGONTOOLMFC_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 461
+        VERTGUIDE, 75
+        BOTTOMMARGIN, 326
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 314
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 313
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 263
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GENERATEREPORTU         BITMAP                  "res\\bitmap1.bmp"
+GENERATEREPORTD         BITMAP                  "res\\bitmap2.bmp"
+GENERATEREPORTX         BITMAP                  "res\\bmp00001.bmp"
+GENERATEREPORTF         BITMAP                  "res\\bmp00002.bmp"
+GETLASTLOGONDETAILSU    BITMAP                  "res\\bmp00003.bmp"
+GETLASTLOGONDETAILSD    BITMAP                  "res\\bmp00004.bmp"
+GETLASTLOGONDETAILSF    BITMAP                  "res\\bmp00005.bmp"
+GETLASTLOGONDETAILSX    BITMAP                  "res\\bmp00006.bmp"
+SEARCHU                 BITMAP                  "res\\bmp00007.bmp"
+SEARCHD                 BITMAP                  "res\\bmp00008.bmp"
+SEARCHF                 BITMAP                  "res\\bmp00009.bmp"
+SEARCHX                 BITMAP                  "res\\bmp00010.bmp"
+IDB_STAR                BITMAP                  "res\\bmp00011.bmp"
+SELECTALLU              BITMAP                  "res\\bmp00014.bmp"
+SELECTALLD              BITMAP                  "res\\bmp00015.bmp"
+SELECTALLX              BITMAP                  "res\\bmp00016.bmp"
+SELECTALLF              BITMAP                  "res\\bmp00017.bmp"
+IDB_FinderImage         BITMAP                  "res\\bmp00018.bmp"
+DESELECTALLD            BITMAP                  "res\\bmp00019.bmp"
+DESELECTALLU            BITMAP                  "res\\bmp00020.bmp"
+DESELECTALLF            BITMAP                  "res\\bmp00021.bmp"
+DESELECTALLX            BITMAP                  "res\\bmp00022.bmp"
+CLOSEU                  BITMAP                  "res\\bmp00025.bmp"
+CLOSED                  BITMAP                  "res\\bmp00026.bmp"
+CLOSEF                  BITMAP                  "res\\bmp00027.bmp"
+CLOSEX                  BITMAP                  "res\\bmp00028.bmp"
+HOMED                   BITMAP                  "res\\bmp00029.bmp"
+HOMEU                   BITMAP                  "res\\bmp00030.bmp"
+HOMEF                   BITMAP                  "res\\bmp00031.bmp"
+HOMEX                   BITMAP                  "res\\bmp00032.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About LastLogonToolMFC..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\LastLogonToolMFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

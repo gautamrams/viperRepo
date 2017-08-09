@@ -1,0 +1,445 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LocalUserManagement.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LocalUserManagement.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LocalUserManagement"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "LocalUserManagement, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_LOCALUSERMANAGEMENT_DIALOG DIALOGEX 0, 0, 480, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LocalUserManagement"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_GROUP1,0,153,34,66
+    GROUPBOX        "Static",IDC_GROUP2,0,248,48,98
+    COMBOBOX        IDC_COMBO1,38,182,85,37,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Get Computer List",IDC_BUTTON1,41,224,67,14
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,263,49,46
+    EDITTEXT        IDC_EDIT1,49,207,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,107,215,58,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Get Local Users",IDC_LocalUsersButton,0,312,50,14
+    LTEXT           "Domain Name  :",IDC_DOMAINNAMELABEL,42,169,51,8
+    LTEXT           "User Name  :",IDC_USERNAMELABEL,51,197,42,8
+    LTEXT           "Password  :",IDC_PASSWORDLABEL,114,202,38,8
+    PUSHBUTTON      "Clear",IDC_ClearButton,113,228,50,14,NOT WS_VISIBLE
+    GROUPBOX        "Static",IDC_GROUP3,33,89,368,157
+    GROUPBOX        "Static",IDC_GROUP4,98,102,263,47
+    GROUPBOX        "Static",IDC_GROUP5,173,160,127,40
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,52,132,82,33
+    PUSHBUTTON      "Properties",IDC_PropertiesButton,178,174,50,14
+    PUSHBUTTON      "Reset Password",IDC_ResetPasswordButton,236,174,58,14
+    GROUPBOX        "Static",IDC_GROUP6,203,199,197,40
+    PUSHBUTTON      "Add",IDC_AddButton,206,215,50,14
+    PUSHBUTTON      "Delete",IDC_DeleteButton,257,214,50,14
+    PUSHBUTTON      "Enable",IDC_EnableButton,302,218,50,14
+    PUSHBUTTON      "Disable",IDC_DisableButton,349,217,50,14
+    LTEXT           "Computer  : ",IDC_COMPUTERLABEL,127,119,41,8
+    COMBOBOX        IDC_COMBO2,171,119,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Group  : ",IDC_GROUPLABEL,239,121,29,8
+    COMBOBOX        IDC_COMBO3,267,120,48,30,CBS_DROPDOWNLIST | CBS_SORT | CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         151,IDC_PICTURECONTROL1,"Static",SS_BITMAP | SS_NOTIFY | WS_TABSTOP,5,33,16,15
+    CONTROL         153,IDC_PICTURECONTROL2,"Static",SS_BITMAP | SS_NOTIFY,23,33,16,15
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,3,1,477,31
+    LTEXT           "Retrieving",IDC_InformationLabel,55,255,92,8
+    PUSHBUTTON      "Stop",IDC_StopButton,72,271,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,95,252,80,14
+    LTEXT           "Retrieving",IDC_Information2Label,262,262,34,8
+    CONTROL         "",IDC_PROGRESS2,"msctls_progress32",WS_BORDER,311,260,80,14
+    PUSHBUTTON      "Stop",IDC_Stop2Button,277,286,50,14
+    LTEXT           "Total Number of Computers : ",IDC_TotalComputersLabel,75,308,96,8
+    CONTROL         157,IDC_SearchPictureBox,"Static",SS_BITMAP | SS_NOTIFY,427,163,27,13,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SearchTextBox,385,164,40,14,ES_AUTOHSCROLL
+    LTEXT           "Looking for more reports ? Visit",IDC_ReportLabel,234,358,100,8
+    LTEXT           "www.admanagerplus.com",IDC_LinkLabel,337,358,84,8
+    CONTROL         147,IDC_StarPictureControl1,"Static",SS_BITMAP,51,50,8,7
+    CONTROL         147,IDC_StarPictureControl2,"Static",SS_BITMAP,48,70,8,7
+    LTEXT           "This utility enables Administrator/equivalent Domain user to add, view, remove, enable,",IDC_Info1Label,79,48,281,8
+    LTEXT           " disable, reset password for Local Users in Single/Multiple machines.",IDC_Info2Label,103,60,217,8
+    LTEXT           "If the desired Domain Name is not available in the Text Box given below,",IDC_Info3Label,76,70,232,8
+    LTEXT           "You can even type it in.",IDC_Info4Label,105,81,77,8
+    CONTROL         156,IDC_HOMEPICTURECONTROL,"Static",SS_BITMAP | SS_NOTIFY,429,33,40,15
+    CONTROL         150,IDC_PICTURECONTROL3,"Static",SS_BITMAP,4,33,16,15
+    CONTROL         152,IDC_PICTURECONTROL4,"Static",SS_BITMAP,23,33,16,15
+    PUSHBUTTON      "Select All",IDC_SelectAll1Button,361,72,39,14
+    PUSHBUTTON      "DeSelect All",IDC_DeSelectAll1Button,402,72,44,14
+    PUSHBUTTON      "Select All",IDC_SelectAll2Button,321,90,50,14
+    PUSHBUTTON      "DeSelect All",IDC_DeSelectAll2Button,381,90,50,14
+    LTEXT           "Total Number of Users : ",IDC_TotalUsersLabel,78,323,79,8
+    EDITTEXT        IDC_Search2TextBox,385,182,40,14,ES_AUTOHSCROLL
+    CONTROL         157,IDC_Search2PictureBox,"Static",SS_BITMAP | SS_NOTIFY,427,179,27,13
+    PUSHBUTTON      "Export",Export,425,54,50,14
+    PUSHBUTTON      "Import Computer Names",IDC_BUTTON3,280,145,50,14
+END
+
+IDD_RESETPASSWORD_DIALOG DIALOGEX 0, 0, 231, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reset Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "New Password  :",IDC_NewPasswordLabel,61,64,54,8
+    LTEXT           "Confirm Password  :",IDC_ConfirmPasswordLabel,52,88,65,8
+    EDITTEXT        IDC_NewPasswordtextBox,128,59,61,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ConfirmPasswordtextBox,128,83,62,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_OKButton,63,119,50,14
+    PUSHBUTTON      "Close",IDC_CloseButton,137,117,50,14
+END
+
+IDD_PROPERTIES_DIALOG DIALOGEX 0, 0, 334, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",WS_TABSTOP,7,7,294,207
+    LTEXT           "User Name  : ",IDC_USERNAMELABEL,47,43,44,8
+    LTEXT           "Full Name  : ",IDC_FullNameLabel,47,55,40,8
+    LTEXT           "Description  : ",IDC_DescriptionLabel,46,68,45,8
+    EDITTEXT        IDC_UserNameTextBox,92,43,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FullNameTextBox,86,58,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DescriptionTextBox,85,74,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_Apply1Button,41,94,34,14
+    PUSHBUTTON      "Close",IDC_Close1Button,79,95,36,14
+    LTEXT           "What level of access do you want to grant this user ?",IDC_Label1,145,43,172,9
+    LTEXT           "(Power Users Group)",IDC_Label2,233,60,68,8
+    LTEXT           "User can change many system settings and install",IDC_Label3,148,75,160,8
+    LTEXT           "programs that dont affect Windows system files.",IDC_Label4,143,87,157,8
+    LTEXT           "(Users Group)",IDC_Label5,237,100,46,8
+    LTEXT           "Users can operate computer and save documents,",IDC_Label6,136,119,162,8
+    LTEXT           "but cannot install programs or change system settings.",IDC_Label7,133,132,176,8
+    COMBOBOX        IDC_COMBO1,195,151,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_Apply2Button,147,174,50,14
+    PUSHBUTTON      "Close",IDC_Close2Button,210,176,50,14
+    CONTROL         "Standard User",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,150,57,62,10
+    CONTROL         "Restricted User",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,143,105,65,10
+    CONTROL         "Others",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,144,152,38,10
+END
+
+IDD_ADD_DIALOG DIALOGEX 0, 0, 407, 282
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Users"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Add User",IDC_AddUserButton,223,39,50,14
+    PUSHBUTTON      "Import from CSV",IDC_CSVButton,275,39,59,14
+    GROUPBOX        "User List",IDC_UserListgroupBox,36,60,150,66
+    CONTROL         "",IDC_UserListView,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,53,71,99,50
+    GROUPBOX        "Computer List",IDC_ComputerListgroupBox,58,138,147,63
+    CONTROL         "",IDC_ComputerListView,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,79,151,100,41
+    GROUPBOX        "Group List",IDC_GroupListgroupBox,229,138,124,60
+    CONTROL         "",IDC_GroupListView,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,245,151,85,42
+    PUSHBUTTON      "Create",IDC_CreateButton,215,220,50,14
+    PUSHBUTTON      "Close",IDC_CloseButton,279,219,50,14
+    LTEXT           "Adding Single/Multiple Users",IDC_TitleLabel,151,19,90,8
+END
+
+IDD_SINGLEADDUSER_DIALOG DIALOGEX 0, 0, 228, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Adding Single User"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Adding an User",IDC_TitleLabel,94,24,50,8
+    LTEXT           "User Name       :",IDC_USERNAMELABEL,40,57,52,8
+    LTEXT           "Full Name       :",IDC_FullNameLabel,40,75,48,8
+    LTEXT           "Description      : ",IDC_DescriptionLabel,37,96,53,8
+    LTEXT           "Password      : ",IDC_PASSWORDLABEL,43,123,48,8
+    EDITTEXT        IDC_UserNameTextBox,96,54,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FullNameTextBox,93,76,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DescriptionTextBox,96,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PasswordTextBox,93,118,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_AddButton,73,145,50,14
+    PUSHBUTTON      "Clear",IDC_ClearButton,135,146,50,14
+END
+
+IDD_MULTIPLEUSERADD_DIALOG DIALOGEX 0, 0, 250, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import from CSV File"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FileNameTextBox,82,55,42,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OpenButton,149,54,40,14
+    LTEXT           "Format of the CSV file should be, User Name,",IDC_TitleLabel,31,23,146,8
+    LTEXT           "Selected File  : ",IDC_SelectedFileLabel,29,60,50,8
+    PUSHBUTTON      "Import",IDC_ImportButton,67,92,50,14
+    PUSHBUTTON      "Close",IDC_CloseButton,133,93,50,14
+    LTEXT           "Full Name,Description,Password",IDC_TitleLabel2,55,33,103,8
+    LTEXT           "Note : ",IDC_Title3Label,191,20,23,8
+END
+
+IDD_DOMAINUSERPROPERTIES_DIALOG DIALOGEX 0, 0, 316, 250
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "What level of access do you want to grant this user ?",IDC_Label1,0,43,172,9
+    LTEXT           "(Power Users Group)",IDC_Label2,233,60,68,8
+    LTEXT           "User can change many system settings and install",IDC_Label3,148,75,160,8
+    LTEXT           "programs that dont affect Windows system files.",IDC_Label4,143,87,157,8
+    LTEXT           "(Users Group)",IDC_Label5,237,100,46,8
+    LTEXT           "Users can operate computer and save documents,",IDC_Label6,136,119,162,8
+    LTEXT           "but cannot install programs or change system settings.",IDC_Label7,133,132,176,8
+    COMBOBOX        IDC_COMBO1,195,151,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_Apply2Button,147,174,50,14
+    PUSHBUTTON      "Close",IDC_Close2Button,210,176,50,14
+    CONTROL         "Standard User",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,150,57,62,10
+    CONTROL         "Restricted User",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,143,105,65,10
+    CONTROL         "Others",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,144,152,38,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "LocalUserManagement.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "LocalUserManagement.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LOCALUSERMANAGEMENT_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 368
+    END
+
+    IDD_RESETPASSWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_PROPERTIES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_ADD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_SINGLEADDUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_MULTIPLEUSERADD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_DOMAINUSERPROPERTIES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK                BITMAP                  "res\\back.bmp"
+IDB_FRONT               BITMAP                  "res\\front.bmp"
+IDB_TITLE               BITMAP                  "res\\LocalUserManagement.bmp"
+IDB_SEARCH              BITMAP                  "res\\Search.bmp"
+IDB_SEARCHNEW           BITMAP                  "res\\SearchNew.bmp"
+IDB_STAR                BITMAP                  "res\\star.bmp"
+IDB_TITLE32             BITMAP                  "res\\LocalUserManagement32.bmp"
+IDB_BACKDISABLED        BITMAP                  "res\\BackDisabled.bmp"
+IDB_BACKENABLED         BITMAP                  "res\\BackEnabled.bmp"
+IDB_FRONTDISABLED       BITMAP                  "res\\FrontDisabled.bmp"
+IDB_FRONTENABLED        BITMAP                  "res\\FrontEnabled.bmp"
+IDB_SEARCH1NEW          BITMAP                  "res\\Search1New.bmp"
+IDB_HOME                BITMAP                  "res\\home24.bmp"
+IDB_SEARCHSMALL         BITMAP                  "res\\SearchSmall.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About LocalUserManagement..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\LocalUserManagement.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

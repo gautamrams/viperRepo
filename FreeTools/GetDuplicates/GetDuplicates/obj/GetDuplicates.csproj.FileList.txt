@@ -1,0 +1,7 @@
+bin\Release\GetDuplicates.dll
+bin\Release\GetDuplicates.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\GetDuplicates.Form1.resources
+obj\Release\GetDuplicates.csproj.GenerateResource.Cache
+obj\Release\GetDuplicates.dll
+obj\Release\GetDuplicates.pdb

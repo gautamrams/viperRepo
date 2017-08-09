@@ -1,0 +1,257 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\uitool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\uitool.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 422, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About uitool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "uitool Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,365,7,50,16,WS_GROUP
+END
+
+IDD_UITOOL_DIALOG DIALOGEX 0, 0, 370, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CSV Generator Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC120,"Static",SS_WHITERECT,12,32,345,68
+    CONTROL         "",IDC_STATIC130,"Static",SS_WHITERECT,12,101,345,201
+    LTEXT           "Object",IDC_STATIC3,24,49,32,11
+    COMBOBOX        IDC_COMBO1,65,46,77,52,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File Name",IDC_STATIC1,23,73,37,10
+    EDITTEXT        IDC_EDIT1,65,71,81,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDC_BUTTON3,147,71,19,14,BS_VCENTER
+    PUSHBUTTON      "Generate",IDC_BUTTON1,240,69,51,17
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,28,120,313,172
+    PUSHBUTTON      "Export As",IDC_EXPORT,184,69,51,17
+    PUSHBUTTON      "w",IDCANCEL,336,10,21,19,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "Advanced",IDC_ADVANCE,296,69,51,17
+    LTEXT           "Number of rows selected: ",IDC_STATIC5,29,106,82,10
+    CTEXT           "0",IDC_number,113,106,35,10,WS_TABSTOP
+    LTEXT           "Looking for more reports?",IDC_STATIC,313,308,17,8,NOT WS_VISIBLE
+    LTEXT           "www.admanagerplus.com",IDC_LINK1,327,308,23,8,SS_NOTIFY | NOT WS_VISIBLE | WS_TABSTOP
+    LTEXT           "Copyright © 2015 ZOHO Corp. All rights reserved",IDC_STATIC,96,302,160,8
+    PUSHBUTTON      "CSVDe",IDC_BUTTON2,184,86,51,12,BS_FLAT | NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "CSV",IDC_BUTTON4,184,98,51,13,BS_FLAT | NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    LTEXT           "CSV Generator Tool",IDC_STATIC10,15,6,253,18
+END
+
+IDD_SECOND_DLG DIALOGEX 0, 0, 345, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advanced Attributes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,35,41,95,162,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,203,42,95,162,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_BUTTON1,147,84,43,16
+    PUSHBUTTON      "Remove",IDC_BUTTON2,147,111,43,16
+    PUSHBUTTON      "Finish",IDC_BUTTON3,147,143,43,16
+    LISTBOX         IDC_LIST3,35,41,95,162,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST4,203,42,95,162,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,144,59,48,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Replace the Existing Basic Attributes",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,88,16,203,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "AdventNet"
+            VALUE "FileDescription", "ADManager Plus - Free Active Directory Tools - CSV Generator"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CSVGenerator.exe"
+            VALUE "LegalCopyright", "(c) AdventNet.  All rights reserved."
+            VALUE "OriginalFilename", "CSVGenerator.exe"
+            VALUE "ProductName", "ADManager Plus - Free Active Directory Tools"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_UITOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 12
+        RIGHTMARGIN, 357
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+
+    IDD_SECOND_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "ADlogo.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bitmap3.bmp"
+IDB_BITMAP5             BITMAP                  "SPLASH.bmp"
+IDB_BITMAP1             BITMAP                  "res\\home1.bmp"
+IDB_BITMAP6             BITMAP                  "res\\home-bmp.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About uitool..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\uitool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

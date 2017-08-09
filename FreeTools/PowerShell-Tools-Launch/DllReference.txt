@@ -1,0 +1,11 @@
+
+Get-Duplicates  --GetDuplicates.dll
+Get-Domains    --GetDomains.dll
+
+Get-UserManagement --LocalUserManagement.dll
+
+Get-SPMTool --SPMTool.dll
+
+Get-TerminalSessionManager --TerminalSessionManager.dll
+
+Get-ReplicationProcess --ActiveDirectoryReplicationManager.dll

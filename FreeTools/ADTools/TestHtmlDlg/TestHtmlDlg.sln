@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestHtmlDlg", "TestHtmlDlg\TestHtmlDlg.vcxproj", "{CCAB432B-9158-4A76-99A5-CF774626E8B6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TechCraftersTestHtmlDlg", "TechCraftersTestHtmlDlg\TechCraftersTestHtmlDlg.vcxproj", "{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCAB432B-9158-4A76-99A5-CF774626E8B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CCAB432B-9158-4A76-99A5-CF774626E8B6}.Debug|Win32.Build.0 = Debug|Win32
+		{CCAB432B-9158-4A76-99A5-CF774626E8B6}.Release|Win32.ActiveCfg = Release|Win32
+		{CCAB432B-9158-4A76-99A5-CF774626E8B6}.Release|Win32.Build.0 = Release|Win32
+		{CCAB432B-9158-4A76-99A5-CF774626E8B6}.Template|Win32.ActiveCfg = Template|Win32
+		{CCAB432B-9158-4A76-99A5-CF774626E8B6}.Template|Win32.Build.0 = Template|Win32
+		{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}.Debug|Win32.Build.0 = Debug|Win32
+		{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}.Release|Win32.ActiveCfg = Release|Win32
+		{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}.Release|Win32.Build.0 = Release|Win32
+		{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}.Template|Win32.ActiveCfg = Template|Win32
+		{7D47F3C3-12ED-40AA-B962-828EADEE1E9C}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
