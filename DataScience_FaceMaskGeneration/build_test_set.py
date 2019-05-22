@@ -4,7 +4,7 @@ import csv
 
 def create_test_set(image_name):
     with open("/root/datascience/working_directory/test_image_csv/" + image_name.split(".")[0] + ".csv", mode='w', newline='') as image_matrix:
-        matrix_writer = csv.writer(image_matrix, delimiter=',')  # Create a new CSV writer object
+        matrix_writer = csv.writer(image_matrix, delimiter=',')  # Create a CSV writer object
         print("Creating a test CSV for image " + image_name)
 
         # Load the test image into the pix variable using the Image function from the Pillow library
