@@ -1,2 +1,0 @@
-set type=any
-ls -t tdomain.com
